@@ -1,0 +1,14 @@
+CREATE TABLE Provider (
+sid int(9) PRIMARY KEY,
+    sname varchar(30),
+    address varchar(40));
+
+CREATE TABLE Goodies (
+pid int(9) PRIMARY KEY,
+    pname varchar(40),
+    color varchar(15));
+
+CREATE TABLE Stock (
+sid int(9) PRIMARY KEY,
+    pid int(9) NOT NULL,
+    cost int(10));

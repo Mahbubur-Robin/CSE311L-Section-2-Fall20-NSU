@@ -1,0 +1,21 @@
+CREATE TABLE Student (
+    snum decimal(9,0) PRIMARY KEY,
+    sname varchar(30),
+    major varchar(25),
+    level varchar(2),
+    age  decimal(3,0));
+
+CREATE TABLE Department (
+fid decimal(9,0) PRIMARY KEY,
+    fname varchar(30),
+    deptid decimal(2,0));
+
+CREATE TABLE Course (
+snum decimal(9,0) PRIMARY KEY,
+    cname varchar(40) PRIMARY KEY);
+
+CREATE TABLE Class (
+name varchar(40) PRIMARY KEY,
+    meets_at varchar(20),
+    room varchar(10),
+    fid decimal(9,0));
